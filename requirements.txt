@@ -1,0 +1,11 @@
+# Python 3.13 is recommended.
+# marker-pdf constrains Pillow<11.0.0, and Pillow only ships cp314 wheels from
+# 11.3.0 onward, so on Python 3.14 pip builds Pillow from source rather than
+# installing a wheel.
+marker-pdf==1.10.2
+transformers==4.57.6
+markdown==3.10.2
+latex2mathml==3.81.0
+# Bundles a pandoc binary (used by the default EPUB builder). A system pandoc
+# on PATH, or $PANDOC_PATH, takes precedence.
+pypandoc_binary==1.17
